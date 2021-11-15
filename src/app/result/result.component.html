@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+ <div class="container-fluid">
+      <h2 style="text-align: center; font-size:xxx-large;font: italic;font-family: cursive;color: crimson;">
+        F.R.I.E.N.D.S---Q.U.I.Z---A.P.P</h2>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="/crud">Back</a>
+          </li>
+        </ul>
+      </div>
+  </div>
+  </nav>
+  <div class="container">
+    
+    <img src="../../assets/T.jpg" alt="Avatar" class="avatar">
+  
+
+<h1>Your Score is: {{ansIncrement}}/{{qstIncrement}}</h1>  
+<p style="font-size:18px;color:white;font-family: cursive;">Well....Well....Well....Its never too late to binge watch F.R.I.E.N.D.S...What are you waiting for?...A roller coaster of mixed emotions awaits you...At the end, the 6 friends close the door behind them,and left their keys on the table.The yellow frame on the purple door remained where it was. In that moment, a lot of stories ended. The scene feels like a hug which comes before a sad goodbye.
+</p>
+
+ <div *ngFor="let quiz of quizes;let i=index ">
+
+
+      <h2>Question{{i+1}}</h2> 
+      <h2>{{quiz.question}}</h2>
+      <h2>--------------</h2>
+      <div *ngFor="let option of quiz.opt;let j=index">
+        <div id="label2" 
+        
+        [ngClass]="!quiz.result && quiz.answer==j+1?'yellow':quiz.selectedId==j+1 && quiz.result?'green':!quiz.result && quiz.selectedId==j+1?'red':''">
+          {{option}}</div>
+          <p>. . . . . . . . .  . . . . . . . . . . . . . . . . . </p>
+
+
+      </div>
+
+  

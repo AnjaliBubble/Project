@@ -1,0 +1,18 @@
+.radio{
+    background-color:cornflowerblue;
+    display: block;
+    position: relative;
+    padding: 10px 10px 10px 50px;
+    margin-bottom: 1px;
+    font-size: 18px;
+    user-select: none;
+    word-wrap: break-word;
+}
+.container{
+    background-image: url(../../assets/K.jpg);
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height:500em;width:auto;
+  background-position:50% 50%;
+}

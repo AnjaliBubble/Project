@@ -1,0 +1,32 @@
+.yellow{
+    background-color: yellow;
+}
+.red{
+    background-color:red;
+}
+.green{
+    background-color:green;
+}
+.radio{
+    background-color: #E7E9EB;
+    display: block;
+    position: relative;
+    padding: 10px 10px 10px 50px;
+    margin-bottom: 1px;
+    font-size: 18px;
+    user-select: none;
+    word-wrap: break-word;
+}
+.container{
+    background-image: url(../../assets/th.jpg);
+    background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height:500em;width:auto;
+  background-position:50% 50%;
+}
+img.avatar {
+    width: 25%;
+    border-radius: 25%;
+
+}        

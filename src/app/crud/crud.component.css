@@ -1,0 +1,8 @@
+.container{
+  background-image: url(../../assets/u.jpg);
+  background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+height:40em;width:auto;
+background-position:50% 50%;
+}
